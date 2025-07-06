@@ -113,7 +113,7 @@ The compiled JAR will be in the `target` folder.
 ## Dependencies
 
 - **Paper/Spigot 1.21+**
-- **PlaceholderAPI** (required)
+- **PlaceholderAPI** (not required, but highly reccomended)
 
 ## Performance Features
 
