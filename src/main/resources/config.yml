@@ -1,0 +1,78 @@
+# FastVanish Configuration
+# Author: pandadevv
+
+# General Settings
+general:
+  # Whether to enable debug mode
+  debug: false
+  # Whether to save vanish status on server restart
+  save-vanish-status: true
+  # Whether to show vanish messages to other players
+  show-vanish-messages: false
+
+# Vanish Settings
+vanish:
+  # Whether vanished players can pick up items
+  can-pickup-items: false
+  # Whether vanished players can push other entities
+  can-push-entities: false
+  # Whether vanished players can be pushed by other entities
+  can-be-pushed: false
+  # Whether vanished players can interact with blocks
+  can-interact: false
+  # Whether vanished players can break blocks
+  can-break-blocks: false
+  # Whether vanished players can place blocks
+  can-place-blocks: false
+  # Whether vanished players can use items
+  can-use-items: false
+  # Whether vanished players can drop items
+  can-drop-items: false
+  # Whether vanished players can take damage
+  can-take-damage: false
+  # Whether vanished players can deal damage
+  can-deal-damage: false
+  # Whether vanished players can be targeted by mobs
+  can-be-targeted: false
+  # Whether vanished players can be seen by other players
+  can-be-seen: false
+  # Whether vanished players can see other vanished players
+  can-see-vanished: true
+  # Whether vanished players can see invisible players
+  can-see-invisible: true
+
+# Messages
+messages:
+  prefix: "&8[&bFastVanish&8] &r"
+  vanished: "&aYou are now vanished!"
+  unvanished: "&cYou are no longer vanished!"
+  vanished-other: "&aYou have vanished &e{player}&a!"
+  unvanished-other: "&cYou have unvanished &e{player}&c!"
+  already-vanished: "&cThat player is already vanished!"
+  not-vanished: "&cThat player is not vanished!"
+  no-permission: "&cYou don't have permission to do that!"
+  player-not-found: "&cPlayer not found!"
+  vanish-list: "&aVanished players: &e{players}"
+  no-vanished-players: "&aNo players are currently vanished."
+
+# PlaceholderAPI Settings
+placeholders:
+  # Whether to enable PlaceholderAPI integration
+  enabled: true
+  # Placeholder for real player count (excluding vanished players)
+  real-player-count: "%fastvanish_real_count%"
+  # Placeholder for vanished status
+  vanished-status: "%fastvanish_vanished%"
+  # Text to show when player is vanished
+  vanished-text: "&7[Vanished]"
+  # Text to show when player is not vanished
+  not-vanished-text: ""
+
+# Performance Settings
+performance:
+  # Whether to use async tasks for vanish operations
+  use-async: true
+  # Whether to cache vanish status
+  cache-vanish-status: true
+  # Cache expiration time in minutes
+  cache-expiration: 5 

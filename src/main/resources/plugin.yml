@@ -1,0 +1,36 @@
+name: FastVanish
+version: '${project.version}'
+main: com.pandadevv.fastvanish.FastVanish
+api-version: '1.21'
+author: pandadevv
+description: A high-performance vanish plugin for Minecraft 1.21+
+website: https://github.com/pandadevv/FastVanish
+depend: [PlaceholderAPI]
+
+commands:
+  vanish:
+    description: Toggle vanish status
+    usage: /<command> [player]
+    aliases: [v, hide, show]
+    permission: fastvanish.vanish
+    permission-message: "&cYou don't have permission to use this command!"
+  vanishlist:
+    description: List all vanished players
+    usage: /<command>
+    aliases: [vl, vanished]
+    permission: fastvanish.vanishlist
+    permission-message: "&cYou don't have permission to use this command!"
+
+permissions:
+  fastvanish.vanish:
+    description: Allows players to vanish
+    default: op
+  fastvanish.vanishlist:
+    description: Allows players to see the vanish list
+    default: op
+  fastvanish.vanish.others:
+    description: Allows players to vanish other players
+    default: op
+  fastvanish.bypass:
+    description: Bypass vanish restrictions
+    default: op 
