@@ -5,7 +5,7 @@ api-version: '1.21'
 author: pandadevv
 description: A high-performance vanish plugin for Minecraft 1.21+
 website: https://github.com/pandadevv/FastVanish
-depend: [PlaceholderAPI]
+softdepend: [PlaceholderAPI]
 
 commands:
   vanish:
