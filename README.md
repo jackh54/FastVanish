@@ -66,7 +66,7 @@ vanish:
   can-see-invisible: true
 ```
 
-### Messages
+### Messages (to be redone)
 ```yaml
 messages:
   prefix: "&8[&bFastVanish&8] &r"
